@@ -257,7 +257,9 @@ body {
    #index-container {
       height: 70vh;
    }
-
+   .nav-logo {
+      width:70% ;
+   }
    .carousel-caption h2 {
       font-size: 1.5rem;
    }
