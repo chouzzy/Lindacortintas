@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, 
+      initial-scale=1.0">
+      <title>Lindacor Tintas</title>
+      <link rel=”canonical” href=”http://www.lindacortintas.com.br/” />
+      <!-- <link rel="stylesheet" href="{% static 'css/teste.css' %}"> -->
+      <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" >  
+      <link rel="stylesheet" href="{% static 'css/base.css' %}" >  
+      <link rel="icon" href="{% static 'img/lindacor-icon.png' %}" >
+   </head>
+   <body
+      data-bs-spy="scroll"
+      data-bs-target="#navbar-awer"
+      data-bs-offset="68"
+      tabindex="0"
+      id="item-1"
+   >
+         {% include 'partials/nav.html' %}
+
+         {% block index %}
+         {% endblock %}
+         
+         {% include 'container_2.html' %}
+         {% include 'container_3.html' %}
+         {% include 'container_4.html' %}
+         {% include 'container_5.html' %}
+         
+      <footer>
+         <script src="{% static 'js/bootstrap.min.js' %}"></script>
+         <script src="{% static 'js/jquery.min.js' %}"></script>
+         <script src="{% static 'js/bootstrap-online.js' %}"></script>
+      </footer>
+   </body>
+</html>

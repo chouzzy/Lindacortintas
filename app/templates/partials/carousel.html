@@ -1,0 +1,72 @@
+{% load static %}
+
+<div id="index-carousel" class="shadow carousel slide border" data-ride="carousel">
+
+   <!-- <ol class="carousel-indicators">
+      <li data-target="#index-carousel" data-slide-to="0" class="active  px-3">
+         <img src="{% static 'icons\minus.svg' %}" alt="">
+
+
+      </li>
+      <li data-target="#index-carousel" class="px-3" data-slide-to="1">         <img src="{% static 'icons\minus.svg' %}" alt=""></li>
+      <li data-target="#index-carousel" class="px-3" data-slide-to="2">         <img src="{% static 'icons\minus.svg' %}" alt=""></li>
+      689 por 362
+    </ol> -->
+
+   <div class="carousel-inner">
+
+     <div class="carousel-item active">
+      <img
+         class="d-block w-100 m-auto"
+         src="{% static 'img\banner-1.png' %}" 
+         alt="First slide"
+      >
+      <div class="carousel-caption d-md-block">
+        <h2>{{Banner_Title_1}}</h2>
+        <p> {{Banner_Desc_1}} </p>
+      </div>
+     </div>
+
+     <div class="carousel-item">
+       <img
+         class="d-block w-100  m-auto"
+         src="{% static 'img\banner-2.png' %}"
+         alt="Second slide"
+       >
+       <div class="carousel-caption d-md-block">
+        <h2>{{Banner_Title_2}}</h2>
+        <p> {{Banner_Desc_2}} </p>
+      </div>
+     </div>
+
+     <div class="carousel-item">
+       <img
+         class="d-block w-100  m-auto "
+         src="{% static 'img\banner-3.png' %}"
+         alt="Third slide"
+       >
+       <div class="carousel-caption d-md-block">
+        <h2>{{Banner_Title_3}}</h2>
+        <p> {{Banner_Desc_3}} </p>
+      </div>
+     </div>
+
+   </div>
+
+   <a
+     class="carousel-control-prev"
+     href="#index-carousel"
+     role="button"
+     data-slide="prev"
+   >
+     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+   </a>
+   <a
+      class="carousel-control-next "
+      href="#index-carousel"
+      role="button"
+      data-slide="next"
+   >
+     <span class="carousel-control-next-icon" aria-hidden="true"></span>
+   </a>
+ </div>

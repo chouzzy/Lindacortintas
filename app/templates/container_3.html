@@ -1,0 +1,91 @@
+{% load static %}
+
+  <div
+    id="item-3"
+    content=".container"
+    class='min-vh-100
+    container-3'
+  >
+    {% include 'partials/menu_space.html' %}
+    <section class=".container-fluid">
+       
+      <div class='row align-items-center products-container'>
+
+         <div class="row my-5 text-center">
+            <h2>  {{Products_line_title}}  </h2>
+         </div>
+         <div class="col-12 text-center ">
+
+               <div class="row">
+                     <div class="col-12 shadow position-relative my-3">
+                        <img
+                          class='img-lines
+                          rounded
+                          img-fluid'
+                          src="{% static 'img\home.png' %}"
+                          alt="image of a yellow house"
+                        >
+                        <p class='products-description'>
+                           {{Products_line_1}}
+                        </p>
+                        
+                     </div>
+                     <div class="col-12 my-3 shadow position-relative">
+                        <img class='img-lines rounded img-fluid' 
+                        src="{% static 'img\industry.png' %}"
+                        alt="image of a colored machine in a industry">
+                        <p class='products-description'>
+                           {{Products_line_2}}
+                        </p>
+                     </div>
+               </div>
+
+               <div class="row">
+
+                     <div class="col-12 my-3 shadow position-relative">
+                        <img
+                          class='img-lines
+                          rounded
+                          img-fluid'
+                          src="{% static 'img\paint-rollers.png' %}"
+                          alt="image of three paint rollers"
+                        >
+                        <p class='products-description'>
+                           {{Products_line_3}}
+                        </p>
+                     </div>
+                     <div class="col-12 my-3 shadow position-relative">
+                        <img class='img-lines rounded img-fluid' 
+                        src="{% static 'img\waterproof.png' %}" 
+                        alt="image of a waterproof wall">
+                        <p class='products-description'>
+                           {{Products_line_4}}
+                        </p>
+                     </div>
+
+               </div>
+
+               <div class="row"> 
+
+                     <div class="col-12  my-3 shadow position-relative">
+                        <img class='img-lines rounded img-fluid' src="{% static 'img\can.png' %}" alt="image of a old and open yellow can">
+                        <p class='products-description'>
+                           {{Products_line_5}}
+                        </p>
+                     </div>
+                     
+               </div>
+
+         </div>
+
+         <!-- <div class='col-3'>
+            <div class="row text-center">
+               <h4>Nossos produtos
+               </h4>
+            </div>
+         </div> -->
+
+      </div>
+
+   </section>
+  </div>  

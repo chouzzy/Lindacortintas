@@ -1,0 +1,155 @@
+{% load static %}
+
+  <div
+    id="item-5"
+    content=".container"
+    class='
+    container-5
+    border
+    position-relative'
+  >
+    {% include 'partials/menu_space.html' %}
+    <section class=".container-fluid">
+       
+      <div class="col align-items-center contact-container">
+
+        <div class='row font-weight-bold text-center text-white my-3'>
+          <h2> {{Contact_title}} </h2>
+        </div>
+
+        <!-- Div dos endereços e contatos -->
+        <div id="item-6" class='row text-center justify-content-between'>
+
+           <!-- Primeiro endereço -->
+            <div class="py-4 my-3 bg-white rounded-3 border col-12 col-sm-6 col-md-5 col-lg-5 col-xl-5">
+              <p> {{Contact_address_1}} </p>
+              <iframe class='border' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3720.1360076815504!2d-47.829504085064634!3d-21.186755385913038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b9be9217877245%3A0xe17f0f64c1fbd07e!2sR.%20Dr.%20Jo%C3%A3o%20Gui%C3%A3o%2C%201056%20-%20Vila%20Virginia%2C%20Ribeir%C3%A3o%20Preto%20-%20SP%2C%2014030-440!5e0!3m2!1spt-BR!2sbr!4v1648817469914!5m2!1spt-BR!2sbr" width="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" alt='Address of the first store' ></iframe>
+              <div class="row text-center">
+
+                <div class='col-6 col-sm-12 col-md-6 col-lg-6 col-xl-6'>
+                    <img
+                    class="img-fluid"
+                    src="{% static 'icons/telefone.png' %}"
+                    alt="Telefone icon"
+                    > 
+                    <div> {{Contact_phone_1}}  </div>
+                </div>
+                <div class="col-6 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                    <img
+                    class="img-fluid"
+                    src="{% static 'icons/zap.png' %}"
+                    alt="Whatsapp icon"
+                    >  
+                    <div> {{Contact_whatsapp_first}}  </div>
+                    <div> {{Contact_whatsapp_second}} </div> 
+                </div>
+
+              </div>
+            </div>
+            <!-- Segundo endereço -->
+            <div class="py-4 my-3 bg-white rounded-3 border col-12 col-sm-6 col-md-5 col-lg-5 col-xl-5">
+              <p> {{Contact_address_2}} </p>
+              <iframe class='border' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3719.8928401992703!2d-47.824566185441675!3d-21.19641548440527!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b9bec08620d2d5%3A0x6fa495639a52a700!2sAv.%20Caramuru%2C%202055%20-%202%20-%20Jardim%20Sumare%2C%20Ribeir%C3%A3o%20Preto%20-%20SP%2C%2014025-303!5e0!3m2!1spt-BR!2sbr!4v1648817586786!5m2!1spt-BR!2sbr" width="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" alt="Address of the second store"></iframe>
+              <div class="row text-center">
+                <div class='col-6 col-sm-12 col-md-6 col-lg-6 col-xl-6'>
+                    <img
+                    class="img-fluid"
+                    src="{% static 'icons/telefone.png' %}"
+                    alt="Telefone icon"
+                    > 
+                    <div> {{Contact_phone_2}}  </div>
+                </div>
+                <div class="col-6 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                    <img
+                    class="img-fluid"
+                    src="{% static 'icons/zap.png' %}"
+                    alt="Whatsapp icon"
+                    >  
+                    <div> {{Contact_whatsapp_first}}  </div>
+                    <div> {{Contact_whatsapp_second}} </div> 
+                </div>
+            </div>
+            </div>
+
+        </div>
+
+        <!-- Botão do zap -->
+        <div class="row">
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+          <a
+            class='zap-button'
+            href="https://wa.me/5511971415567?text=Adorei%20seu%20artigo"
+            target="_blank"
+            alt="Whatsapp button"
+          >
+          <i style="margin-top:16px" class="fa fa-whatsapp"></i>
+          </a>
+        </div>
+
+        <!-- Footer contatos -->
+        <div class='footer-contacts row text-center my-5 align-items-center'>
+            <div class="py-4 col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+              <img class='img-fluid' src="{% static 'img/footer-logo.png' %}" alt="Logo of Lindacor Tintas">
+            </div>
+            
+            <div class="py-4 col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 align-items-center">
+                <img class="mx-1" src="{% static 'icons/email.png' %}" alt="E-mail icon">
+                <span> {{Contact_email}} </span>
+            </div>
+            <div class="py-4 col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+              {{Contact_created_by}}
+                <span class="awer"> {{Contact_creator_name}}</span> 
+            </div>
+
+            <div class="py-4 col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+              <a class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4" href=""> 
+                <img class="img-fluid" src="{% static 'icons/face.png' %}" alt="Facebook icon">  
+              </a>
+              
+              <a class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4" href=""> 
+                <img class="img-fluid" src="{% static 'icons/insta.png' %}" alt="Instagram icon">  
+              </a>
+              
+              <a class="col-6 col-sm-12 col-md-4 col-lg-4 col-xl-4" href=""> 
+                <img class="img-fluid" src="{% static 'icons/zap.png' %}" alt="Whatsapp icon">  
+              </a>
+            </div>
+        </div>
+        <!-- Footer rights -->
+        <div class='footer-rights row text-center text-white'>
+          <div class="col-12">
+            <p>{{Contact_rights}}</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- <div class="footer-contact position-absolute bottom-0 w-100 p-3">
+      <div class="row text-center align-items-center">
+
+          <div class="powered col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2">Fale conosco: matheus@awer.co 
+          </div>
+
+          <div class="rights col-7 col-sm-7 col-md-8 col-lg-8 col-xl-8">
+            Lindacor Tintas ®  - Todos os direitos reservados
+          </div>
+
+          <div class="col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2">
+            
+            <a class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4" href=""> 
+              <img class="img-fluid" src="{% static 'icons/face.png' %}" alt="">  
+            </a>
+            
+            <a class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4" href=""> 
+              <img class="img-fluid" src="{% static 'icons/insta.png' %}" alt="">  
+            </a>
+            
+            <a class="col-6 col-sm-12 col-md-4 col-lg-4 col-xl-4" href=""> 
+              <img class="img-fluid" src="{% static 'icons/zap.png' %}" alt="">  
+            </a>
+          </div>
+
+      </div>
+    </div> -->
+  </div>  

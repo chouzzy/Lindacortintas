@@ -1,0 +1,5 @@
+User-agent: *
+Allow: *
+Sitemap: https://www.lindacor.com.br/sitemap.xml
+Disallow: /private/
+Disallow: /junk/

@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block index %}
+<div id="index-container" content=".container " class='container-1 position-relative divisoria-menu '>
+   <div>
+      <div style="height:68px">
+      </div>
+      <section class=".container-fluid ">
+         {% include 'partials/carousel.html' %}
+         {% include 'partials/index-footer.html' %}
+      </section>
+   </div>
+</div>
+{% endblock %}
