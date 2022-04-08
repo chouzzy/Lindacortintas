@@ -53,7 +53,8 @@ def index(request):
       'Contact_whatsapp_first':"(16) 99609-2935",
       'Contact_whatsapp_second':"(16) 99143-9381",
 
-      'Contact_email':"contato@awer.co",
+      'Contact_email_awer':"contato@awer.co",
+      'Contact_email_lindacor':"contato@lindacortintas.com.br",
       'Contact_created_by':"created by",
       'Contact_creator_name':"awer.co",
 

@@ -234,14 +234,26 @@ body {
 }
 
 .footer-contacts {
-   background: linear-gradient(135deg, rgba(255, 255, 255, 0.912), rgba(250, 250, 250, 0.782));
+   background: linear-gradient(135deg, rgba(255, 255, 255, 0.782), rgba(214, 162, 211, 0.782));
    border-radius: 40px;
+   width: 80%;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.footer-contacts-awer {
+   background: linear-gradient(135deg, rgba(55, 52, 52, 0.912), rgba(24, 23, 23, 0.782));
+   border-radius: 40px;
+   width: 55%;
+   margin-left: auto;
+   margin-right: auto;
+   padding: 10px
 }
 
 .footer-contacts a {
    text-decoration: none;
 }
-.footer-contacts .awer {
+.footer-contacts-awer .awer {
    color: #F55F5E ;
 }
 .footer-rights {
