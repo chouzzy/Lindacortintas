@@ -266,12 +266,69 @@ body {
 
 
 
+@media (max-width: 575.98px) and (min-height: 701px) { 
+   #index-container {
+      height: 60vh;
+      max-height: 480px;
+   }
+   .nav-logo {
+      width:88px ;
+      margin-left: 0;
+   }
+   .carousel-caption h2 {
+      font-size: 1.5rem;
+   }
+   .carousel-caption p {
+      font-size: 0.8rem;
+   }
 
+   .promo-icons-1 {
+      height:46px;
+      width:46px; 
+   }
+   .promo-icons-2 {
+      height:46px;
+      width:46px; 
+   }
+   .promo-icons-3 {
+      height:42px;
+      width:42px; 
+   }
+   .promo-texts {
+      font-weight: bold;
+      font-size: 0.7rem;
+   }
+
+   /* Container 2 */
+   .container-2-anime {
+      width: 200px;
+      height: 200px;
+   }
+   .container-2-logo {
+      margin: auto;
+      width: 240px;
+   }
+   #container-2-about h4 {
+      letter-spacing: 1px;
+      font-weight: bold;
+      font-size: 1.2em;
+   }
+   #container-2-about p {
+      font-size: 0.9rem;
+   }
+   /* container 5 properties */
+   /* .container-5 {
+      height: 170vh;
+      font-size: 3vw; 
+   }
+   */
+}
 
 /* Responsividade @media 👇🏻 */
-@media (max-width: 575.98px) { 
+@media (max-width: 575.98px) and (max-height:699.98px) { 
    #index-container {
       height: 70vh;
+      min-height: 500px;
    }
    .nav-logo {
       width:88px ;
