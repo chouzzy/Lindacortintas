@@ -23,7 +23,7 @@ def index(request):
 
       'Promo_icon_1':'Parcelamento em até 5x',
       'Promo_icon_2':'Frete grátis para até 50km!',
-      'Promo_icon_3':"100% seguro!",
+      'Promo_icon_3':"Site 100% seguro!",
       
       # CONTAINER 2
       'About_us_title_1':"Quem somos",
