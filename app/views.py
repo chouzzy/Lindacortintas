@@ -1,9 +1,14 @@
 from django.shortcuts import render, get_object_or_404
 from django.http import HttpResponse
 from .models import Snipped
+from numpy import random
+
 
 
 def index(request):
+   x = random.randint(0,3)
+   numbers = ['5516996092936','5516997093759','5516996092935','5516991439381']
+   print(x)
    return render(request, 'index.html', 
    {
       #Container 1 (INDEX)
@@ -45,18 +50,19 @@ def index(request):
 
       'Contact_address_1':"LOJA 1: Rua João Guião 1056",
       'Contact_phone_1':"(16) 3637-2108",
-      'Contact_whatsapp_first':"(16) 99609-2936",
-      'Contact_whatsapp_second':"(16) 99709-3759",
+      'Contact_whatsapp_first_1':"(16) 99609-2936",
+      'Contact_whatsapp_second_1':"(16) 99709-3759",
 
       'Contact_address_2':"LOJA 2: Av. Caramuru 2055",
       'Contact_phone_2':"(16) 3621-2108",
-      'Contact_whatsapp_first':"(16) 99609-2935",
-      'Contact_whatsapp_second':"(16) 99143-9381",
+      'Contact_whatsapp_first_2':"(16) 99609-2935",
+      'Contact_whatsapp_second_2':"(16) 99143-9381",
 
       'Contact_email_awer':"contato@awer.co",
       'Contact_email_lindacor':"contato@lindacortintas.com.br",
       'Contact_created_by':"created by",
       'Contact_creator_name':"awer.co",
+      'button_zap_number':numbers[x],
 
       'Contact_rights':"Lindacor Tintas ®  - Todos os direitos reservados",
 

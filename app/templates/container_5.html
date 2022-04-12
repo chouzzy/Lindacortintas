@@ -22,14 +22,14 @@
            <!-- Primeiro endereço -->
             <div class="py-4 my-3 bg-white rounded-3 border col-12 col-sm-6 col-md-5 col-lg-5 col-xl-5">
               <p> {{Contact_address_1}} </p>
-              <iframe class='border' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3720.1360076815504!2d-47.829504085064634!3d-21.186755385913038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b9be9217877245%3A0xe17f0f64c1fbd07e!2sR.%20Dr.%20Jo%C3%A3o%20Gui%C3%A3o%2C%201056%20-%20Vila%20Virginia%2C%20Ribeir%C3%A3o%20Preto%20-%20SP%2C%2014030-440!5e0!3m2!1spt-BR!2sbr!4v1648817469914!5m2!1spt-BR!2sbr" width="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" alt='Address of the first store' ></iframe>
+              <iframe class='border' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3720.1360076815504!2d-47.829504085064634!3d-21.186755385913038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b9be9217877245%3A0xe17f0f64c1fbd07e!2sR.%20Dr.%20Jo%C3%A3o%20Gui%C3%A3o%2C%201056%20-%20Vila%20Virginia%2C%20Ribeir%C3%A3o%20Preto%20-%20SP%2C%2014030-440!5e0!3m2!1spt-BR!2sbr!4v1648817469914!5m2!1spt-BR!2sbr" width="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" alt='Endereço da loja 1' ></iframe>
               <div class="row text-center">
 
                 <div class='col-6 col-sm-12 col-md-6 col-lg-6 col-xl-6'>
                     <img
                     class="img-fluid"
                     src="{% static 'icons/telefone.png' %}"
-                    alt="Telefone icon"
+                    alt="Ícone de telefone da loja 1"
                     > 
                     <div> {{Contact_phone_1}}  </div>
                 </div>
@@ -37,10 +37,14 @@
                     <img
                     class="img-fluid"
                     src="{% static 'icons/zap.png' %}"
-                    alt="Whatsapp icon"
+                    alt="Ícone do Whatsapp da loja 1"
                     >  
-                    <div> {{Contact_whatsapp_first}}  </div>
-                    <div> {{Contact_whatsapp_second}} </div> 
+                    <a class='zap-links d-block'>  
+                      {{Contact_whatsapp_first_1}}  
+                    </a>
+                    <a class='zap-links d-block'> 
+                      {{Contact_whatsapp_second_1}} 
+                    </a> 
                 </div>
 
               </div>
@@ -48,13 +52,13 @@
             <!-- Segundo endereço -->
             <div class="py-4 my-3 bg-white rounded-3 border col-12 col-sm-6 col-md-5 col-lg-5 col-xl-5">
               <p> {{Contact_address_2}} </p>
-              <iframe class='border' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3719.8928401992703!2d-47.824566185441675!3d-21.19641548440527!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b9bec08620d2d5%3A0x6fa495639a52a700!2sAv.%20Caramuru%2C%202055%20-%202%20-%20Jardim%20Sumare%2C%20Ribeir%C3%A3o%20Preto%20-%20SP%2C%2014025-303!5e0!3m2!1spt-BR!2sbr!4v1648817586786!5m2!1spt-BR!2sbr" width="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" alt="Address of the second store"></iframe>
+              <iframe class='border' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3719.8928401992703!2d-47.824566185441675!3d-21.19641548440527!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b9bec08620d2d5%3A0x6fa495639a52a700!2sAv.%20Caramuru%2C%202055%20-%202%20-%20Jardim%20Sumare%2C%20Ribeir%C3%A3o%20Preto%20-%20SP%2C%2014025-303!5e0!3m2!1spt-BR!2sbr!4v1648817586786!5m2!1spt-BR!2sbr" width="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" alt="Endereço da segunda loja"></iframe>
               <div class="row text-center">
                 <div class='col-6 col-sm-12 col-md-6 col-lg-6 col-xl-6'>
                     <img
                     class="img-fluid"
                     src="{% static 'icons/telefone.png' %}"
-                    alt="Telefone icon"
+                    alt="Ícone do telefone da segunda loja"
                     > 
                     <div> {{Contact_phone_2}}  </div>
                 </div>
@@ -62,10 +66,14 @@
                     <img
                     class="img-fluid"
                     src="{% static 'icons/zap.png' %}"
-                    alt="Whatsapp icon"
+                    alt="Ícone Whatsapp do telefone da segunda loja"
                     >  
-                    <div> {{Contact_whatsapp_first}}  </div>
-                    <div> {{Contact_whatsapp_second}} </div> 
+                    <a class='zap-links d-block'>
+                      {{Contact_whatsapp_first_2}}  
+                    </a>
+                    <a class='zap-links d-block'> 
+                      {{Contact_whatsapp_second_2}} 
+                    </a> 
                 </div>
             </div>
             </div>
@@ -77,9 +85,9 @@
           <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
           <a
             class='zap-button'
-            href="https://wa.me/5511971415567?text=Adorei%20seu%20artigo"
+            href="https://wa.me/{{button_zap_number}}?text=Olá!"
             target="_blank"
-            alt="Whatsapp button"
+            alt="Botão de Whatsapp para contato"
           >
           <i style="margin-top:16px" class="fa fa-whatsapp"></i>
           </a>
@@ -89,25 +97,34 @@
         <div class='footer-contacts row text-center my-5 align-items-center'>
           <!-- Lindacor contatos -->
             <div class="py-3 col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
-              <img class='img-fluid' src="{% static 'img/footer-logo.png' %}" alt="Logo of Lindacor Tintas">
+              <img class='img-fluid' src="{% static 'img/footer-logo.png' %}" alt="Logo da Lindacor Tintas">
             </div>
 
             <div class="py-3 col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 align-items-center">
-              <img class="mx-1" src="{% static 'icons/email.png' %}" alt="E-mail icon">
+              <img class="mx-1" src="{% static 'icons/email.png' %}" 
+              alt="Ícone de e-mail">
               <span> {{Contact_email_lindacor}} </span>
             </div>
 
             <div class="py-3 col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
-              <a class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4" href=""> 
-                <img class="img-fluid" src="{% static 'icons/face.png' %}" alt="Facebook icon">  
+              <a class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3" 
+              href="https://www.facebook.com/Lindacor-Tintas-104622232176385">
+
+                <img class="img-fluid" src="{% static 'icons/face.png' %}" alt="Ícone do facebook">  
               </a>
               
-              <a class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4" href=""> 
-                <img class="img-fluid" src="{% static 'icons/insta.png' %}" alt="Instagram icon">  
+              <a class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3" 
+              href="https://www.instagram.com/lindacortintas/"> 
+                <img class="img-fluid" src="{% static 'icons/insta.png' %}" alt="Ícone do instagram">  
               </a>
               
-              <a class="col-6 col-sm-12 col-md-4 col-lg-4 col-xl-4" href=""> 
-                <img class="img-fluid" src="{% static 'icons/zap.png' %}" alt="Whatsapp icon">  
+              <a class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3" 
+              href="https://www.linkedin.com/company/lindacor-tintas/"> 
+                <img class="img-fluid" src="{% static 'icons/linkedin.png' %}" alt="Ícone do Linkedin">  
+              </a>
+              <a class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3" 
+              href="https://wa.me/{{button_zap_number}}?text=Olá!"> 
+                <img class="img-fluid" src="{% static 'icons/zap.png' %}" alt="Ícone do Whatsapp">  
               </a>
             </div>
 
@@ -120,7 +137,7 @@
                 <span class="awer"> {{Contact_creator_name}}</span> 
             </div>
             <div class="py-3 col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 align-items-center">
-                <img class="mx-1" src="{% static 'icons/email.png' %}" alt="E-mail icon">
+                <img class="mx-1" src="{% static 'icons/email.png' %}" alt="Ícone de E-mail">
                 <span> {{Contact_email_awer}} </span>
             </div>
 
