@@ -59,7 +59,7 @@ def index(request):
       'Contact_whatsapp_second_2':"(16) 99143-9381",
 
       'Contact_email_awer':"contato@awer.co",
-      'Contact_email_lindacor':"contato@lindacortintas.com.br",
+      'Contact_email_lindacor':"atendimento@lindacortintas.com.br",
       'Contact_created_by':"created by",
       'Contact_creator_name':"awer.co",
       'button_zap_number':numbers[x],
